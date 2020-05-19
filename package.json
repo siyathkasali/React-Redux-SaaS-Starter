@@ -3,18 +3,25 @@
   "version": "1.0.0",
   "description": "'A SaaS Product Starter with react-redux",
   "main": "app.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "scripts": {
+    "start": "webpack-dev-server ---mode development --open --hot",
+    "build": "webpack --mode production",
     "lint": "eslint --ext .jsx --ext js ./src"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/siyathkasali/React-Redux-SaaS-Starter.git"
   },
-  "keywords": [
-    "Saas",
-    "React",
-    "Redux"
-  ],
+  "keywords": [ "SaaS", "React", "Redux" ],
   "author": "Siyath Kasali",
   "license": "MIT",
   "bugs": {

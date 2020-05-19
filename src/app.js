@@ -1,6 +1,9 @@
-const a = 36;
-function siyath() {
-  return a;
-}
+import React from 'react';
 
-siyath();
+export default function app() {
+  return (
+    <div>
+      <h1>Hello World!</h1>
+    </div>
+  );
+}
