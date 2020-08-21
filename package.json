@@ -33,12 +33,13 @@
   },
   "homepage": "https://github.com/siyathkasali/React-Redux-SaaS-Starter#readme",
   "dependencies": {
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "styled-components": "^5.1.1"
+    "sass-loader": "^9.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
