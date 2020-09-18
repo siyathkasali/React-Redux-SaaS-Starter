@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -15,7 +16,7 @@ module.exports = {
         use: 'babel-loader',
       },
       {
-        test: /\.(scss)/, use: ['style-loader', 'css-loader', 'sass-loader'],
+        test: /\.s?css$/, use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
@@ -25,4 +26,7 @@ module.exports = {
       template: 'src/index.html',
     }),
   ],
+  devServer: {
+    historyApiFallback: true,
+  }
 };

@@ -6,7 +6,12 @@
   "babel": {
     "presets": [
       "@babel/preset-env",
-      "@babel/preset-react"
+      "@babel/preset-react",
+      {
+        "plugins": [
+          "@babel/plugin-proposal-class-properties"
+        ]
+      }
     ]
   },
   "scripts": {
@@ -33,13 +38,13 @@
   },
   "homepage": "https://github.com/siyathkasali/React-Redux-SaaS-Starter#readme",
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0",
-    "sass-loader": "^9.0.3"
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -47,6 +52,7 @@
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
+    "sass-loader": "^9.0.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
